@@ -11,6 +11,8 @@
     width: 30%;
     text-align: center;
     cursor: pointer;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .valued-service:hover .service-icon {
@@ -31,4 +33,37 @@
     transition: all 0.4s;
 }
 
+/* ========================================== */
 
+.parameter {
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+    background-color: #82B440;
+    padding: 30px 15px;
+    cursor: pointer;
+}
+
+.parameter:hover .parameter-icon {
+    transform: scale(1.2);
+}
+
+.parameter-icon {
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+}
+
+.parameter-count {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.parameter-item {
+    color: white;
+    margin-top: 0;
+    font-size: 0.8rem;
+}
