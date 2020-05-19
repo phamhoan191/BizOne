@@ -1,5 +1,11 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: segoe ui, sans-serif;
+    background-color: #eeeeee;
 }
 
 .color1 {
@@ -25,12 +31,18 @@
 
 .service-icon {
     font-size: 50px;
-    transform: scale(1);
+    margin-bottom: 15px;
+    padding: 5px;
     transition: all 0.4s;
 }
 
 .service-name {
+    margin-bottom: 15px;
     transition: all 0.4s;
+}
+
+.service-info {
+    margin-bottom: 10px;
 }
 
 /* ========================================== */
@@ -64,6 +76,77 @@
 
 .parameter-item {
     color: white;
-    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 0.8rem;
+}
+
+/* ========================================= */
+
+.work {
+    width: 20%;
+    background-color: white;
+    text-align: center;
+}
+
+.work:hover .work-top{
+    background-color: #08aaa5;
+}
+
+.work:hover .work-icon-bg {
+    background-color: #08aaa5;
+}
+
+.work:hover .work-icon {
+    transform: scale(1.2);
+}
+
+.work-top {
+    height: 72px;
+    background-color: #969696;
+    display: block;
+    transition: all 0.4s;
+}
+
+.work-icon-bg {
+    width: 100px;
+    height: 100px;
+    background-color: #969696;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: -50px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.work-icon {
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.work-name {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.work-info {
+    font-size: 14px;
+    color: #222222;
+    margin: 0 15px;
+}
+
+.work-read-more {
+    color: #969696;
+    text-decoration: none;
+    display: inline-block;
+    margin: 35px 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.work-read-more:hover {
+    color: #08aaa5;
 }
