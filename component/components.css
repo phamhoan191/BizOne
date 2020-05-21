@@ -49,7 +49,8 @@ li {
     margin-bottom: 10px;
 }
 
-/* ========================================== */
+/* Valued end */
+/* Parameter */
 
 .parameter {
     font-weight: bold;
@@ -84,7 +85,8 @@ li {
     font-size: 0.8rem;
 }
 
-/* ========================================= */
+/* Parameter end */
+/* Work */
 
 .work {
     width: 20%;
@@ -155,13 +157,13 @@ li {
     color: #08aaa5;
 }
 
-/* ============================================= */
+/* Work end */
+/* Team member  */
 
 .team-member {
     width: 33%;
     text-align: center;
     padding: 0 10px;
-    float: left;
 }
 
 .thinker {
@@ -239,4 +241,82 @@ li {
 
 .member-info p {
     margin: 0 5px;
+}
+
+/* Team member end  */
+/* Project item  */
+
+.project-container {
+    width: 50%;
+    height: 450px;   
+    position: relative; 
+    overflow: hidden;
+}
+
+.project-item {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/workimg1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+}
+
+.project-container .project-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    text-decoration: none;
+    width: 97%;
+    height: 95%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container .project-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #82a75f;
+    position: absolute;
+    top: 40%;
+    left: 37.75%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container .project-line {
+    position: absolute;
+    width: 33%;
+    height: 1px;
+    top: 50%;
+    left: 33.5%;
+    background-color: #000;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container .about-project {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container:hover .project-item {
+    transform: scale(1.1);
+}
+
+.project-container:hover .project-overlay {
+    opacity: 0.8;
+}
+
+.project-container:hover .project-name, .project-container:hover .about-project, .project-container:hover .project-line {
+    opacity: 1;
 }
