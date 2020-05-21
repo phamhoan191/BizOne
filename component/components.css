@@ -263,48 +263,45 @@ li {
 }
 
 .project-container .project-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
     text-decoration: none;
-    width: 97%;
-    height: 95%;
+    width: auto;
+    height: auto;
     background-color: #fff;
     opacity: 0;
     transition: all 0.4s;
+}
+
+.project-container .project-overlay-item {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: auto;
 }
 
 .project-container .project-name {
     font-size: 24px;
     font-weight: 600;
     color: #82a75f;
-    position: absolute;
-    top: 40%;
-    left: 37.75%;
     opacity: 0;
     transition: all 0.4s;
 }
 
 .project-container .project-line {
-    position: absolute;
-    width: 33%;
     height: 1px;
-    top: 50%;
-    left: 33.5%;
     background-color: #000;
-    opacity: 0;
+    margin: 15px auto;
     transition: all 0.4s;
+    width: 0%;
 }
 
 .project-container .about-project {
-    position: absolute;
-    top: 55%;
-    left: 44%;
     opacity: 0;
     transition: all 0.4s;
 }
@@ -317,6 +314,72 @@ li {
     opacity: 0.8;
 }
 
-.project-container:hover .project-name, .project-container:hover .about-project, .project-container:hover .project-line {
+.project-container:hover .project-name, .project-container:hover .about-project {
     opacity: 1;
+}
+
+.project-container:hover .project-line {
+    width: 40%;
+}
+
+/* Project end */
+/* Pricing item  */
+
+.pricing-item {
+    width: 33%;
+    height: 500px;
+    background-color: #ddd;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-item .pricing-option {
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #aaa;
+}
+
+.pricing-item .pricing-price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.pricing-item .pricing-description {
+    font-weight: 600;
+    color: #aaa;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #aaa;
+}
+
+.pricing-item .pricing-advantage {
+    margin-top: 20px;
+}
+
+.pricing-item .pricing-advantage li {
+    display: flex;
+    margin: 10px 0;
+}
+
+.pricing-item .pricing-advantage li i {
+    margin-right: 10px;
+    color: #82B440;
+}
+
+.pricing-item .choose-plan {
+    align-self: center;
+    margin-top: auto;
+    text-decoration: none;
+    background-color: #aaa;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.4s;
+}
+
+.pricing-item .choose-plan:hover {
+    background-color: #08aaa5;
 }
