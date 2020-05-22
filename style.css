@@ -778,3 +778,35 @@ li {
 }
 
 /* =============Pricing table ended================== */
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./component/images/bg-testinomial.jpg');
+    background-position: center center;
+    padding: 100px 250px;
+    color: #fff;
+}
+
+.our-clients h2 {
+    color: #82b440;
+}
+
+.our-clients .client-comment {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.our-clients span {
+    margin-bottom: 10px;
+}
+
+.our-clients i {
+    color: yellow;
+}
+
+/* ================Our clients ended================= */
+
