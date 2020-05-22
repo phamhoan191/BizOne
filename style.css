@@ -481,7 +481,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 150px 40px 0;
+    margin: 120px 40px 0;
     padding-bottom: 60px;
 }
 
@@ -588,3 +588,121 @@ li {
 
 /* =================Creative thinkers ended================ */
 
+.latest-projects {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.latest-projects .latest-do {
+    font-size: 14px;
+}
+
+.latest-projects h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.latest-projects .projects-all {
+    display: flex;
+    width: 100%;
+}
+
+.latest-projects .projects-all .projects-left, .latest-projects .projects-all .projects-right {
+    width: 50vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.latest-projects .project-first {
+    grid-column: 1/3;
+}
+
+.latest-projects .project-second {
+    height: 25vw;
+}
+
+/* == */
+.project-container {
+    width: 100%;
+    height: 450px;   
+    position: relative; 
+    overflow: hidden;
+}
+
+.project-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+}
+
+.project-container .project-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container .project-overlay-item {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.project-container .project-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #82a75f;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container .project-line {
+    height: 1px;
+    background-color: #000;
+    margin: 15px auto;
+    transition: all 0.3s;
+    width: 0%;
+}
+
+.project-container .about-project {
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.project-container:hover .project-item {
+    transform: scale(1.1);
+}
+
+.project-container:hover .project-overlay {
+    opacity: 0.8;
+}
+
+.project-container:hover .project-name, .project-container:hover .about-project {
+    opacity: 1;
+}
+
+.project-container:hover .project-line {
+    width: 40%;
+}
+
+/* ===============Latest projects ended================= */
