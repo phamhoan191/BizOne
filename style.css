@@ -385,11 +385,13 @@ li {
 /* =================Parameter ended=============== */
 
 .we-do {
-    margin: 100px 0 60px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #eee;
 }
 
 .we-do h2 {
@@ -409,7 +411,6 @@ li {
     background-color: white;
     text-align: center;
     margin: 10px;
-    border: 1px solid #eee;
 }
 
 .work:hover .work-top{
@@ -472,3 +473,118 @@ li {
 .work-read-more:hover {
     color: #08aaa5;
 }
+
+/* ==================What we do ended================== */
+
+.creative-thinkers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 40px 0;
+    padding-bottom: 60px;
+}
+
+.creative-thinkers .creative-slogan {
+    font-size: 14px;
+}
+
+.creative-thinkers h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.creative-thinkers .thinkers-team {
+    display: flex;
+    margin: 20px 100px;
+}
+
+.team-member {
+    position: relative;
+    width: 33%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.thinker {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.member-avatar {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all 0.4s;
+}
+
+.team-member:hover .member-avatar {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    top: auto;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: scaleY(0);
+}
+
+
+.overlay .overlay-inner .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .overlay-inner .social li {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.overlay .overlay-inner .social li:hover {
+    background-color: #fff;
+}
+
+.overlay .overlay-inner .social li:hover i {
+    color: #000;
+}
+
+.overlay i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.member-image:hover .overlay {
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.member-info h3 {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.member-info small {
+    display: block;
+    color: #888;
+    margin: 5px 0 15px;
+}
+
+.member-info p {
+    margin: 0 5px;
+}
+
+/* =================Creative thinkers ended================ */
+
