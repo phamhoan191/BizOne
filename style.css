@@ -810,3 +810,74 @@ li {
 
 /* ================Our clients ended================= */
 
+.public {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 120px 130px 60px;
+}
+
+.public .public-post {
+    display: flex;
+}
+
+.blog-item {
+    width: 33%;
+    margin: 20px;
+}
+
+.blog-item .blog-image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.blog-item .blog-image .blog-image-bg {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    transition: all 0.4s;
+}
+
+.blog-item:hover .blog-image-bg {
+    transform: scale(1.05);
+}
+
+.blog-item .blog-date {
+    color: #969696;
+}
+
+.blog-item .blog-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.blog-item .blog-author {
+    margin-bottom: 20px;
+}
+
+.blog-item .blog-author .blog-comments {
+    text-decoration: none;
+    font-weight: 600;
+    color: #82B440;
+}
+
+.blog-item .blog-about {
+    margin-bottom: 20px;
+}
+
+.blog-item .blog-more {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.4s;
+}
+
+.blog-item .blog-more:hover {
+    color: #82B440;
+}
+
+/* =============Publications ended================ */
+
