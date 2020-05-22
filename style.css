@@ -27,7 +27,7 @@ li {
 }
 
 .nav .nav-logo {
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 .nav .nav-logo img {
@@ -216,3 +216,259 @@ li {
 
 /* ===============Services ended============= */
 
+.talk {
+    width: 100%;
+    height: 290px;
+    padding-top: 100px;
+    background-image: url('./component/images/paralax-index1.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.talk p {
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+
+.talk h2 {
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.talk a {
+    padding-bottom: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #82b440;
+    transition: all 0.4s;
+}
+
+.talk a:hover {
+    background-color: #07AAA5;
+}
+
+/* =============Talk ended================= */
+
+.exp {
+    display: flex;
+    margin: 100px 50px 50px 0;
+}
+
+.exp .exp-left {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.exp .exp-left img {
+    max-width: 100%;
+}
+
+.exp .exp-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px 40px 20px;
+}
+
+.exp .exp-right h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.exp .exp-right span {
+    margin-bottom: 30px;
+}
+
+.exp .exp-right .features-label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.exp .exp-right .exp-features {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.exp .exp-right .exp-features .features-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.exp .exp-right .exp-features .features-item i {
+    color: #82b440;
+    padding: 5px;
+}
+
+.exp .exp-right .exp-devices {
+    margin-top: 20px;
+}
+
+.exp .exp-right .exp-devices .fa-laptop {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.exp .exp-right .exp-devices .fa-tablet-alt {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.exp .exp-right .exp-devices .fa-mobile-alt {
+    font-size: 30px;
+}
+
+/* =================Exp ended==================== */
+
+.bg-color-1 {
+    background-color: #82b440;
+}
+
+.bg-color-2 {
+    background-color: #969696;
+}
+
+.bg-color-3 {
+    background-color: #07AAA5;
+}
+
+.parameter-all {
+    display: flex;
+}
+
+.parameter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 25%;
+    height: 200px;
+    padding: 30px 15px;
+    cursor: pointer;
+}
+
+.parameter:hover .parameter-icon {
+    transform: scale(1.2);
+}
+
+.parameter-icon {
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+}
+
+.parameter-count {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.parameter-item {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+/* =================Parameter ended=============== */
+
+.we-do {
+    margin: 100px 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-do h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.we-do .we-do-work {
+    display: flex;
+    justify-content: center;
+    margin: 20px 60px;
+}
+
+.work {
+    width: 20%;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #eee;
+}
+
+.work:hover .work-top{
+    background-color: #08aaa5;
+}
+
+.work:hover .work-icon-bg {
+    background-color: #08aaa5;
+}
+
+.work:hover .work-icon {
+    transform: scale(1.2);
+}
+
+.work-top {
+    height: 72px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.work-icon-bg {
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: -50px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.work-icon {
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.work-name {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.work-info {
+    font-size: 14px;
+    color: #222222;
+    margin: 0 15px;
+}
+
+.work-read-more {
+    color: #969696;
+    text-decoration: none;
+    display: inline-block;
+    margin: 35px 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.work-read-more:hover {
+    color: #08aaa5;
+}
